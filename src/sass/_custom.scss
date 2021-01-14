@@ -15,7 +15,7 @@ body {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /*================= SECTION LAYOUT ===================*/
@@ -180,14 +180,14 @@ p {
     position: relative;
     background-image: url('../images/reviews/rbg.jpg');
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
     &::before {
         content: '';
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.945);
+        background-color: rgba(0, 0, 0, 0.966);
     }
 
     h2, .title-border, .section__content {
@@ -199,7 +199,7 @@ p {
     }
 }
 
-// 
+/*==================== REVIEWS ====================*/ 
 .reviews {
     background-color: rgba(15, 15, 15, 0.856);
 
@@ -212,5 +212,19 @@ p {
         text-align: center;
         font-size: 1.3rem;
         font-weight: 1.3;
+
+        &__img {
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            width: 70%;
+            height: 70%;
+            display: block;
+            filter: sepia(100%);
+        }
+
+        &__text {
+            text-align: center;
+            color: #fff;
+        }
     }
 }
