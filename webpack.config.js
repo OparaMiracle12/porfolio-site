@@ -45,9 +45,8 @@ module.exports = {
                 use: {
                    loader: 'file-loader',
                     options:{
-                        outputPath: 'images',
-                        name: '[name].[ext]',
-						publicPath: "images",
+                        name: 'images/[name].[ext]',
+						publicPath: "dist",
                     }
                 }
             },
@@ -60,7 +59,8 @@ module.exports = {
             {
                 test:/\.(woff|woff2|ttf|otf|eot)$/,
                 use: {loader: 'file-loader', options:{
-                    outputPath: 'fonts'
+                    name: 'fonts/[name].[ext]',
+                    publicPath: 'dist'
                 }}
             },
         ]
