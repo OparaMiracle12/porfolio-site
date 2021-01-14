@@ -1,7 +1,7 @@
 const path = require('path');
-const HtmlWebpackPlugin = require();
-const MiniCssExtractPlugin = require();
-const {CleanWebpackPlugin} = require();
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -9,8 +9,6 @@ module.exports = {
         filename: 'scripts/[name].js',
         path: path.resolve(__dirname, 'dist'),
     },
-    
-    devtools: 'inline-source-maps',
     
     devServer: {
         contentBase: 'dist',
@@ -45,10 +43,11 @@ module.exports = {
             {
                 test:/\.(png|gif|svg|jpe?g)$/,
                 use: {
-                    loader: 'file-loader',
+                   loader: 'file-loader',
                     options:{
                         outputPath: 'images',
-                        name: '[name].[ext]'
+                        name: '[name].[ext]',
+						publicPath: "images",
                     }
                 }
             },
@@ -72,7 +71,7 @@ module.exports = {
             cleanStaleWebpackAssests: false
         }),
         new HtmlWebpackPlugin({
-            template: 'index.html',
+            template: './public/index.html',
             filename: 'index.html'
         }),
         new MiniCssExtractPlugin({
