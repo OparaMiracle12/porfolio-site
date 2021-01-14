@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/sass/main.css">
+</head>
+<body>
+    <!-- ==================== MAIN HEADER ====================== -->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead__content">
+                <h1 class="site-brand">
+                    <a href="/">Portfolio</a>
+                </h1>
+    
+                <nav class="navigation">
+                    <a href="" class="navigation__link">Home</a>
+                    <a href="" class="navigation__link">About</a>
+                    <a href="" class="navigation__link">Reviews</a>
+                    <a href="" class="navigation__link">Contact</a>
+                </nav>
+
+                <div class="menu-toggler">
+                    <span class="menu-toggler__icon"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================== BANNER ============================= -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="body">
+                        <h1 class="banner__title display-1 text-white">
+                            Hi, i'm a <span class="text-primary">frontend</span> Web developer.
+                        </h1>
+                        <p class="banner__subtitle lead text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, aut!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================== MAIN ====================== -->
+    <main class="main-container">
+        <article class="about-me section">
+            <div class="container">
+                <h2 class="section__title">About Me</h2>
+                <div class="title-border"></div>
+                
+                <div class="section__content">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="author-image">
+                                <img src="./src/images/about/about1.jpg" class="img-fluid" alt="Admin Photo">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-7">
+                            <div class="author-bio pt-3 pt-md-0">
+                                <div class="bio-details">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maxime, ipsam et quidem voluptates velit enim atque sequi repudiandae, itaque accusantium ad facere laudantium rerum aliquid illo iure mollitia quaerat neque? Numquam suscipit architecto, quia voluptatibus neque vero, non, provident voluptatum sapiente labore in officia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+        </article>
+
+        <!-- ================== REVIEWS ====================== -->
+        <section class="reviews section">
+            <div class="container">
+                <h2 class="section__title">Reviews</h2>
+                <div class="title-border"></div>
+                <p class="section__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, numquam!</p>
+                
+                <div class="section__content">
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-2">
+                            <div class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <div class="review card mx-auto w-75">
+                                        <img src="./src/images/reviews/r1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="carousel-item">
+                                    <div class="review card mx-auto w-75">
+                                        <img src="./src/images/reviews/r2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="carousel-item">
+                                    <div class="review card mx-auto w-75">
+                                        <img src="./src/images/reviews/r3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./src/scripts/bootstrap.bundle.js"></script>
+</body>
+</html>
