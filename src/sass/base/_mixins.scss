@@ -1,0 +1,4 @@
+// MIXINS
+@mixin transition($property) {
+    transition: $property 300ms linear;
+}

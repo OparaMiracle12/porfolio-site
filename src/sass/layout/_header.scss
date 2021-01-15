@@ -1,0 +1,85 @@
+/*=============== HEADER ===============*/
+.masthead {
+  padding: 1rem 0;
+  background-color: black;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-brand a {
+    text-decoration: none;
+    font-family: cursive;
+    color: rgb(255, 196, 0);
+    text-shadow: 1px 1px 7px #000;
+  }
+
+  .navigation {
+    border-right: 2px solid orange;
+    padding: 2rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 60%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.904);
+    z-index: 1;
+    @include transition(all);
+    transform: translateX(-100vw);
+
+    &.open {
+      transform: translateX(0);
+    }
+  }
+
+  .navigation__link {
+    padding: 5px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    @include transition(all);
+
+    &:hover {
+      color: rgb(255, 196, 0);
+    }
+  }
+
+  .menu-toggler {
+    cursor: pointer;
+    @include transition(all);
+
+    .fa-bars {
+      color: #ccc;
+      font-size: 1.5rem;
+    }
+
+    &:hover .fa-bars {
+      color: #fff;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .navigation {
+      display: flex;
+      padding: 0;
+      height: auto;
+      width: auto;
+      position: static;
+      transform: translateX(0);
+      border: none;
+    }
+
+    .navigation__link {
+      font-size: 1.1rem;
+    }
+
+    .menu-toggler {
+      display: none;
+    }
+  }
+}

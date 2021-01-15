@@ -1,0 +1,23 @@
+/*==================== ABOUT ===================*/ 
+.about-me {
+    position: relative;
+    background-image: url('../images/reviews/rbg.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.966);
+    }
+
+    h2, .title-border, .section__content {
+        position: relative;
+    }
+
+    .section__content {
+        color: rgb(255, 196, 0);
+    }
+}

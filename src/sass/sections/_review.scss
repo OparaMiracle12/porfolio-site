@@ -1,0 +1,29 @@
+/*==================== REVIEWS ====================*/ 
+.reviews {
+    background-color: rgba(15, 15, 15, 0.856);
+
+    .section__content {
+        background-color: #000;
+    }
+
+    .review {
+        border: none;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 1.3;
+
+        &__img {
+            margin: 0 auto 10px;
+            border-radius: 30%;
+            width: 70%;
+            height: 70%;
+            display: block;
+            filter: sepia(100%);
+        }
+
+        &__text {
+            text-align: center;
+            color: #fff;
+        }
+    }
+}

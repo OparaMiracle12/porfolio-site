@@ -1,0 +1,45 @@
+/*============== BANNER ==============*/
+.banner {
+  position: relative;
+  top: 2.7rem;
+  height: calc(30rem + 1.2vw);
+  max-height: 100vh;
+  background-image: url("../images/hero/light.jpg");
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.829);
+  }
+
+  .body {
+    position: relative;
+    padding-top: 4rem;
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .social-icon {
+      margin-right: 12px;
+    }
+
+    .social-icon a {
+      color: #ccc;
+      font-size: 1.7rem;
+      @include transition(all);
+    }
+
+    .social-icon:nth-child(2) a {
+      font-size: 2.6rem;
+    }
+
+    .social-icons a:hover {
+      color: #fff;
+    }
+  }
+}

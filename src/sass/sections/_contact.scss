@@ -1,0 +1,18 @@
+/*============================== CONTACT ==============================*/ 
+.contact {
+    background-color: black;
+
+    input, textarea {
+        background-color: rgb(27, 26, 26);
+        @include transition(all);
+    }
+
+    input:focus, textarea:focus {
+        background-color: black;
+        color: #fff;
+    }
+
+    textarea {
+        resize: none;
+    }
+}

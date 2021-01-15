@@ -1,0 +1,30 @@
+/*================= SECTION LAYOUT ===================*/
+.section {
+    padding: 0 0 4rem;
+
+    .section__title, .section__subtitle {
+        text-align: center;
+        color: #fff;
+    }
+
+    .section__title {
+        padding-top: 4rem;
+        text-transform: uppercase;
+    }
+
+    .section__subtitle {
+        font-size: 1.3rem;
+    }
+
+    .title-border {
+        width: 4rem;
+        height: 5px;
+        margin: 10px auto 20px;
+        background-color: rgb(255, 102, 0);
+    }
+
+    .section__content {
+        margin-top: 2rem;
+        padding: 2rem 0;
+    }
+}
