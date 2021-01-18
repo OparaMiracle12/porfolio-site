@@ -1,18 +1,24 @@
-/*============================== CONTACT ==============================*/ 
+/*============================== CONTACT ==============================*/
 .contact {
+  background-color: black;
+
+  input,
+  textarea {
+    font-style: italic;
+    background-color: rgb(27, 26, 26);
+    @include transition(all);
+    border-color: #fff;
+  }
+
+  input:focus,
+  textarea:focus {
     background-color: black;
+    color: #fff;
+    border-color: orange;
+    box-shadow: none;
+  }
 
-    input, textarea {
-        background-color: rgb(27, 26, 26);
-        @include transition(all);
-    }
-
-    input:focus, textarea:focus {
-        background-color: black;
-        color: #fff;
-    }
-
-    textarea {
-        resize: none;
-    }
+  textarea {
+    resize: none;
+  }
 }
