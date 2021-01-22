@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio Site</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#header">
     <!-- ==================== MAIN HEADER ====================== -->
-    <header class="masthead fixed-top">
+    <header class="masthead fixed-top" id="header">
       <div class="container">
         <div class="masthead__content">
           <h1 class="site-brand" data-aos="fade-right">
             <a href="/">My Portfolio</a>
           </h1>
 
-          <nav class="navigation">
-            <a href="#home" class="navigation__link">Home</a>
-            <a href="#about" class="navigation__link">About</a>
-            <a href="#reviews" class="navigation__link">Reviews</a>
-            <a href="#contact" class="navigation__link">Contact</a>
+          <nav class="nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#reviews" class="nav-link">Reviews</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </nav>
 
           <div class="menu-toggler">
@@ -33,7 +33,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-10 col-lg-8">
-            <div class="body" data-aos="slide-up">
+            <div class="body" data-aos="slide-left">
               <h1 class="banner__title display-1 text-white">
                 Hello, i'm a <span class="text-primary">Frontend</span> Web
                 developer.
@@ -43,7 +43,7 @@
                 aut!
               </p>
 
-              <p class="display-5 text-warning">Follow Me:</p>
+              <p class="display-5 text-warning pt-4">Follow Me:</p>
 
               <ul class="social-icons list-unstyled">
                 <li class="social-icon">
@@ -66,7 +66,7 @@
     <main class="main-container">
       <article class="about-me section" id="about">
         <div class="container">
-          <h2 class="section__title">About Me</h2>
+          <h2 class="section__title" data-aos="fade-in">About Me</h2>
           <div class="title-border"></div>
 
           <div class="section__content">
@@ -225,5 +225,11 @@
         </div>
       </div>
     </footer>
+
+    <nav class="nav bg-light">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Link</a>
+    </nav>
   </body>
 </html>

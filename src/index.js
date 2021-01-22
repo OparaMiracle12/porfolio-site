@@ -1,5 +1,6 @@
 import "./sass/main.scss";
 import Carousel from "bootstrap/js/dist/carousel";
+import Scrollspy from "bootstrap/js/dist/scrollspy";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
 import "@fortawesome/fontawesome-free/js/brands";
@@ -11,6 +12,13 @@ import navbarInit from "./scripts/navbar";
 
 // initializing navigation
 navbarInit();
+
+// initializing bootstrap scrollspy
+const bodyElement = document.body;
+
+new ScrollSpy(bodyElement, {
+  target: "#header",
+});
 
 // initializing AOS library
 AOS.init({
