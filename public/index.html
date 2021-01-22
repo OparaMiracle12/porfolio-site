@@ -10,15 +10,15 @@
     <header class="masthead fixed-top">
       <div class="container">
         <div class="masthead__content">
-          <h1 class="site-brand" data-aos="fade-right" data-aos-duration="800">
+          <h1 class="site-brand" data-aos="fade-right">
             <a href="/">My Portfolio</a>
           </h1>
 
           <nav class="navigation">
-            <a href="" class="navigation__link">Home</a>
-            <a href="" class="navigation__link">About</a>
-            <a href="" class="navigation__link">Reviews</a>
-            <a href="" class="navigation__link">Contact</a>
+            <a href="#home" class="navigation__link">Home</a>
+            <a href="#about" class="navigation__link">About</a>
+            <a href="#reviews" class="navigation__link">Reviews</a>
+            <a href="#contact" class="navigation__link">Contact</a>
           </nav>
 
           <div class="menu-toggler">
@@ -29,11 +29,11 @@
     </header>
 
     <!-- ========================== BANNER ============================= -->
-    <div class="banner">
+    <div class="banner" id="home">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-10 col-lg-8">
-            <div class="body" data-aos="slide-up" data-aos-duration="800">
+            <div class="body" data-aos="slide-up">
               <h1 class="banner__title display-1 text-white">
                 Hello, i'm a <span class="text-primary">Frontend</span> Web
                 developer.
@@ -64,7 +64,7 @@
 
     <!-- ======================== MAIN ====================== -->
     <main class="main-container">
-      <article class="about-me section">
+      <article class="about-me section" id="about">
         <div class="container">
           <h2 class="section__title">About Me</h2>
           <div class="title-border"></div>
@@ -72,11 +72,7 @@
           <div class="section__content">
             <div class="row">
               <div class="col-md-6 col-lg-5">
-                <div
-                  class="author-image"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                >
+                <div class="author-image" data-aos="fade-up">
                   <img
                     src="../src/images/about/about2.jpg"
                     class="img-fluid"
@@ -86,11 +82,7 @@
               </div>
 
               <div class="col-md-6 col-lg-7">
-                <div
-                  class="author-bio pt-3 pt-md-0"
-                  data-aos="zoom-in"
-                  data-aos-duration="800"
-                >
+                <div class="author-bio pt-3 pt-md-0" data-aos="zoom-in">
                   <div class="bio-details">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -110,8 +102,8 @@
 
       <!-- ================== REVIEWS ====================== -->
 
-      <section class="reviews section">
-        <div class="container" data-aos="fade-up" data-aos-duration="800">
+      <section class="reviews section" id="reviews">
+        <div class="container" data-aos="fade-up">
           <h2 class="section__title">Reviews</h2>
           <div class="title-border"></div>
           <p class="section__subtitle">
@@ -174,11 +166,7 @@
       </section>
 
       <!-- ======================= CONTACT ME ===================== -->
-      <section
-        class="contact section"
-        data-aos="slide-up"
-        data-aos-duration="800"
-      >
+      <section class="contact section" data-aos="slide-up" id="contact">
         <div class="container">
           <h2 class="section__title">Get in touch</h2>
           <div class="title-border"></div>
@@ -226,7 +214,7 @@
     </main>
 
     <!-- ========================= FOOTER ========================== -->
-    <footer class="footer py-5" data-aos="zoom-in" data-aos-duration="800">
+    <footer class="footer py-5" data-aos="zoom-in">
       <div class="container">
         <div class="copyright">
           <address>

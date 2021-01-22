@@ -7,12 +7,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import navbarInit from "./scripts/navbar";
 
-// initializing components
-const carouselContainer = document.querySelector(".carousel");
+/* ==================== INITIALIZING COMPONENTS ====================== */
 
+// initializing navigation
 navbarInit();
 
-AOS.init(); // initializing AOS library
+// initializing AOS library
+AOS.init({
+  duration: 800,
+  delay: 100,
+  easing: "ease-in",
+});
+
+//  initializing bootstrap carousel
+const carouselContainer = document.querySelector(".carousel");
 
 new Carousel(carouselContainer, {
   interval: 850,
