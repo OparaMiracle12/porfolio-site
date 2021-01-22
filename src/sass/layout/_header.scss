@@ -17,6 +17,8 @@
   }
 
   .nav {
+    display: flex;
+    flex-direction: column;
     border-right: 2px solid orange;
     padding: 2rem 1rem;
     position: fixed;
@@ -38,7 +40,6 @@
 
   .nav-link {
     padding: 5px;
-    display: block;
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
@@ -47,6 +48,26 @@
     &:hover {
       color: rgb(255, 196, 0);
     }
+  }
+
+  // .nav-pills .nav-link {
+  //   border-radius: 0.25rem;
+  // }
+
+  // .nav-pills .nav-link.active,
+  // .nav-pills .show > .nav-link {
+  //   color: #fff;
+  //   background-color: #0d6efd;
+  // }
+
+  .nav-pills .nav-link {
+    border-radius: 0;
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: rgb(255, 196, 0);
+    background-color: inherit;
   }
 
   .menu-toggler {
@@ -64,8 +85,8 @@
   }
 
   @media (min-width: 960px) {
-    .navigation {
-      display: flex;
+    .nav {
+      flex-direction: row;
       padding: 0;
       height: auto;
       width: auto;
@@ -74,7 +95,7 @@
       border: none;
     }
 
-    .navigation__link {
+    .nav-link {
       font-size: 1.1rem;
     }
 

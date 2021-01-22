@@ -13,13 +13,6 @@ import navbarInit from "./scripts/navbar";
 // initializing navigation
 navbarInit();
 
-// initializing bootstrap scrollspy
-const bodyElement = document.body;
-
-new ScrollSpy(bodyElement, {
-  target: "#header",
-});
-
 // initializing AOS library
 AOS.init({
   duration: 800,
@@ -33,4 +26,9 @@ const carouselContainer = document.querySelector(".carousel");
 new Carousel(carouselContainer, {
   interval: 850,
   wrap: true,
+});
+
+// initializing bootstrap scrollspy
+new Scrollspy(document.body, {
+  target: "#header",
 });

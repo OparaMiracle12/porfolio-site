@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Site</title>
   </head>
-  <body data-spy="scroll" data-target="#header">
+  <body data-spy="scroll" data-target="#header" data-offset="0" id="home">
     <!-- ==================== MAIN HEADER ====================== -->
     <header class="masthead fixed-top" id="header">
       <div class="container">
         <div class="masthead__content">
           <h1 class="site-brand" data-aos="fade-right">
-            <a href="/">My Portfolio</a>
+            <a href="#home">My Portfolio</a>
           </h1>
 
-          <nav class="nav">
-            <a href="#home" class="nav-link">Home</a>
+          <nav class="nav nav-pills">
+            <a href="#home" class="nav-link active">Home</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#reviews" class="nav-link">Reviews</a>
             <a href="#contact" class="nav-link">Contact</a>
@@ -29,11 +29,11 @@
     </header>
 
     <!-- ========================== BANNER ============================= -->
-    <div class="banner" id="home">
+    <div class="banner">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-10 col-lg-8">
-            <div class="body" data-aos="slide-left">
+            <div class="body">
               <h1 class="banner__title display-1 text-white">
                 Hello, i'm a <span class="text-primary">Frontend</span> Web
                 developer.
@@ -66,7 +66,7 @@
     <main class="main-container">
       <article class="about-me section" id="about">
         <div class="container">
-          <h2 class="section__title" data-aos="fade-in">About Me</h2>
+          <h2 class="section__title">About Me</h2>
           <div class="title-border"></div>
 
           <div class="section__content">
@@ -214,9 +214,9 @@
     </main>
 
     <!-- ========================= FOOTER ========================== -->
-    <footer class="footer py-5" data-aos="zoom-in">
+    <footer class="footer py-5">
       <div class="container">
-        <div class="copyright">
+        <div class="copyright" data-aos="zoom-in">
           <address>
             <p class="text-center text-light">
               &copy;copyright 2021 By Opara Miracle
@@ -225,11 +225,5 @@
         </div>
       </div>
     </footer>
-
-    <nav class="nav bg-light">
-      <a class="nav-link active" aria-current="page" href="#">Active</a>
-      <a class="nav-link" href="#">Link</a>
-      <a class="nav-link" href="#">Link</a>
-    </nav>
   </body>
 </html>

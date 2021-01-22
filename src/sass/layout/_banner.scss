@@ -3,7 +3,7 @@
   position: relative;
   top: 2.7rem;
   height: 100vh;
-  background-image: url("../images/hero/light.jpg");
+  background-image: url("../images/hero/hero.jpg");
   background-size: cover;
 
   &::before {
@@ -11,7 +11,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.829);
+    background-color: rgba(0, 0, 0, 0.911);
   }
 
   .body {

@@ -1,6 +1,6 @@
 export default function navbarInit() {
   const menuToggler = document.querySelector(".menu-toggler");
-  const navBar = document.querySelector(".navigation");
+  const navBar = document.querySelector(".nav");
   let isMenuOpen = false;
 
   function toggleNavBar() {
